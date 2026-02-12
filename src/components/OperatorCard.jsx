@@ -2,12 +2,12 @@ export default function OperatorCard() {
   return (
     <aside style={styles.container}>
       <img
-        src="https://via.placeholder.com/150"
+        src="/photo-identite.jpg" 
         alt="Operator"
         style={styles.avatar}
       />
 
-      <h2>IoT / IIoT Engineer</h2>
+      <h2 style={styles.h2}>IoT / IIoT Engineer</h2>
 
       <p style={styles.baseline}>
         Je transforme le terrain en décisions fiables.
@@ -26,32 +26,49 @@ export default function OperatorCard() {
 
 const styles = {
   container: {
-    backgroundColor: '#0f172a',
+    backgroundColor: 'transparent',
     padding: '1.5rem',
-    borderRadius: '8px',
-    border: '1px solid #1f2933'
+    border: '1px solid #22c55e',
+    borderRadius: '0px',
   },
   avatar: {
     width: '100%',
-    borderRadius: '6px',
-    marginBottom: '1rem'
+    filter: 'grayscale(1) contrast(1.2)',
+    border: '1px solid #22c55e',
+    marginBottom: '1rem',
+    display: 'block'
+  },
+  h2: {
+    fontSize: '1.2rem',
+    color: '#22c55e',
+    textTransform: 'uppercase',
+    letterSpacing: '0.1em',
+    margin: '0 0 0.5rem 0'
   },
   baseline: {
-    fontSize: '0.85rem',
-    color: '#9ca3af'
+    fontSize: '0.9rem',
+    color: '#ffffff',
+    fontFamily: 'monospace',
+    lineHeight: '1.4'
   },
   layers: {
-    fontSize: '0.7rem',
-    color: '#6b7280',
-    marginTop: '0.3rem'
+    fontSize: '0.75rem',
+    color: '#22c55e',
+    opacity: 0.8,
+    marginTop: '0.5rem',
+    fontFamily: 'monospace',
+    fontWeight: 'bold'
   },
   badge: {
     display: 'inline-block',
-    marginTop: '1rem',
-    padding: '0.3rem 0.6rem',
-    backgroundColor: '#14532d',
-    color: '#86efac',
+    marginTop: '1.5rem',
+    padding: '0.4rem 0.8rem',
+    backgroundColor: 'rgba(34, 197, 94, 0.15)',
+    border: '1px solid #22c55e',
+    color: '#22c55e',
     fontSize: '0.7rem',
-    borderRadius: '4px'
+    fontFamily: 'monospace',
+    fontWeight: 'bold',
+    textTransform: 'uppercase'
   }
 };

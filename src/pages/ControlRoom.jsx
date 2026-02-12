@@ -20,8 +20,7 @@ export default function ControlRoom() {
   return (
     <Layout>
       <div style={dynamicScreenStyle}>
-        
-        {/* OPERATEUR */}
+              
         <section style={styles.card}>
           <div style={styles.cardHeader}>
             <span style={styles.badge}>OPERATOR-ID</span>
@@ -35,8 +34,7 @@ export default function ControlRoom() {
             <Link to="/dossier-operateur" style={styles.cardLink}>→ ACCÉDER AU DOSSIER</Link>
           </div>
         </section>
-        
-        {/* SYSTÈMES */}
+              
         <section style={styles.card}>
           <div style={styles.cardHeader}>
             <span style={styles.badge}>SYS-PROD</span>
@@ -49,8 +47,7 @@ export default function ControlRoom() {
             <System title="PREDICTIVE MAINTENANCE" meta="SENSORS · EDGE · ALERT" link="/missions-deployees" />
           </div>
         </section>
-      
-        {/* INCIDENTS */}
+             
         <section style={styles.card}>
           <div style={styles.cardHeader}>
             <span style={styles.badge}>LOG-FILE</span>

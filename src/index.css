@@ -1,17 +1,16 @@
 /* ===================== SÉCURITÉ RESPONSIVE (FIX) ===================== */
 * {
-  box-sizing: border-box; /* Indispensable pour que padding ne fasse pas déborder */
+  box-sizing: border-box;
 }
 
 html, body {
   height: auto !important;
   overflow-y: auto !important;
-  overflow-x: hidden; /* Empêche la barre à droite */
+  overflow-x: hidden;
   width: 100%;
   max-width: 100%;
 }
 
-/* #root ne doit JAMAIS devenir un container scroll */
 #root {
   height: auto !important;
   overflow: visible !important;
@@ -19,7 +18,6 @@ html, body {
   width: 100%;
 }
 
-/* ===================== VARIABLES ===================== */
 :root{
   --bg:#020617;
   --green:#22c55e;
@@ -35,19 +33,16 @@ html, body {
   color: var(--green);
 }
 
-/* On laisse le vert global sans casser tous les div */
 a, h1, h2, h3, h4, h5, h6, p, span, li, label, small {
   color: inherit;
-  overflow-wrap: break-word; /* Sécurité pour les textes longs sur mobile */
+  overflow-wrap: break-word;
 }
 
-/* ===================== CURSOR TYPING ===================== */
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
 }
 
-/* ===================== SCANLINE ===================== */
 body::after {
   content: '';
   position: fixed;
@@ -147,34 +142,30 @@ textarea:focus {
 }
 
 @media (max-width: 850px) {
-  /* On affiche le bouton burger */
+  
   .burger-btn {
     display: block !important;
   }
-
-  /* On cache la sidebar par défaut à gauche */
+ 
   .sidebar-nav {
-    left: -300px !important; /* Sort de l'écran */
+    left: -300px !important; 
     top: 0 !important;
     transform: none !important;
     border-radius: 0 !important;
     height: 100vh !important;
     width: 250px !important;
   }
-
-  /* Quand on clique sur le burger, la sidebar arrive */
+  
   .sidebar-nav.active {
     left: 0 !important;
   }
-
-  /* Le contenu prend TOUTE la place (comme sur la Home) */
+  
   .main-content-wrap {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
-
-  /* On réduit le padding du contenu pour gagner de la place */
+  
   header {
-    margin-top: 40px; /* Laisse de la place au bouton burger */
+    margin-top: 40px;
   }
 }

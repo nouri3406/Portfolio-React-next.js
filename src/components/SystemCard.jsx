@@ -2,9 +2,7 @@ export default function SystemCard({ title, description, stack }) {
   return (
     <div style={styles.card}>
       <h4 style={styles.title}>{title}</h4>
-
       <p style={styles.text}>{description}</p>
-
       <div style={styles.stack}>
         {stack.map((tech) => (
           <span key={tech} style={styles.badge}>
@@ -18,31 +16,38 @@ export default function SystemCard({ title, description, stack }) {
 
 const styles = {
   card: {
-    backgroundColor: '#0f172a',
-    padding: '1rem',
-    borderRadius: '6px',
-    border: '1px solid #1f2933'
+    backgroundColor: 'transparent',
+    padding: '1.2rem',
+    border: '1px solid #22c55e',
+    borderRadius: '0px',
   },
   title: {
-    fontSize: '0.9rem',
-    letterSpacing: '0.03em'
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    color: '#22c55e',
+    letterSpacing: '0.05em',
+    textTransform: 'uppercase',
+    marginBottom: '0.5rem'
   },
   text: {
-    fontSize: '0.8rem',
-    color: '#9ca3af',
-    marginBottom: '0.6rem'
+    fontSize: '0.85rem',
+    color: '#ffffff',
+    opacity: 0.9,
+    marginBottom: '1rem',
+    fontFamily: 'monospace'
   },
   stack: {
     display: 'flex',
     flexWrap: 'wrap',
-    gap: '0.4rem'
+    gap: '0.5rem'
   },
   badge: {
-    fontSize: '0.65rem',
-    padding: '0.15rem 0.4rem',
-    backgroundColor: '#020617',
-    border: '1px solid #1f2933',
-    borderRadius: '4px',
-    color: '#93c5fd'
+    fontSize: '0.7rem',
+    padding: '2px 8px',
+    backgroundColor: 'rgba(34, 197, 94, 0.1)',
+    border: '1px solid #22c55e',
+    color: '#22c55e',
+    fontFamily: 'monospace',
+    fontWeight: 'bold'
   }
 };

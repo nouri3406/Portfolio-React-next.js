@@ -26,7 +26,6 @@ export default function Home() {
     return () => clearTimeout(timeout);
   }, [index]);
 
-  /* Parallaxe légère */
   useEffect(() => {
     const handleScroll = () => setOffsetY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
@@ -40,8 +39,7 @@ export default function Home() {
         backgroundPosition: `center ${offsetY * 0.15}px`
       }}
     >
-
-      {/* PRÉSENTATION */}
+     
       <section style={styles.intro}>
   <h1 style={styles.title}>
     Nouri FOUDIL-BEY
@@ -86,7 +84,7 @@ function Tile({ title, image, link }) {
 /* ---------- STYLES ---------- */
 
 const styles = {
-  /* WRAPPER ÉCRAN */
+  
   wrapper: {
     minHeight: '100%',
     padding: '32px',
@@ -104,8 +102,7 @@ const styles = {
       0 0 30px rgba(0,0,0,0.9)
     `
   },
-
-  /* INTRO */
+  
   intro: {
     textAlign: 'center',
     maxWidth: '720px',
@@ -141,15 +138,14 @@ const styles = {
     animation: 'blink 1s step-start infinite'
   },
 
-  /* GRID */
+  
   grid: {
     flex: 1,
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gap: '24px'
   },
-
-  /* TILE */
+  
   tile: {
     position: 'relative',
     height: '240px',

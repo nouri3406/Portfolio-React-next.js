@@ -1,31 +1,50 @@
 export default function IncidentList() {
   return (
     <section>
-      <h3>Incidents récents</h3>
+      <h3 style={styles.title}>LOGS D'INCIDENTS RÉSOLUS</h3>
 
       <ul style={styles.list}>
-        <li>Case 01 — Perte réseau (résolu)</li>
-        <li>Case 02 — Capteur bruité (résolu)</li>
-        <li>Case 03 — Explosion coût data (résolu)</li>
+        <li style={styles.item}>[CASE 01] — PERTE RÉSEAU : RECONNEXION AUTO OK</li>
+        <li style={styles.item}>[CASE 02] — CAPTEUR BRUITÉ : FILTRE KALMAN APPLIQUÉ</li>
+        <li style={styles.item}>[CASE 03] — OVERCOST DATA : OPTIMISATION PAYLOAD MQTT</li>
       </ul>
 
       <p style={styles.signature}>
-        Un système n’est pas sérieux quand il marche.
-        Il est sérieux quand il tombe, et qu’il se relève proprement.
+        "Un système n'est pas sérieux quand il marche.
+        Il est sérieux quand il tombe, et qu'il se relève proprement."
       </p>
     </section>
   );
 }
 
 const styles = {
+  title: {
+    fontSize: '0.75rem',
+    color: '#22c55e',
+    fontWeight: 'bold',
+    letterSpacing: '0.1em',
+    marginBottom: '10px'
+  },
   list: {
-    marginTop: '0.5rem',
-    color: '#9ca3af',
-    fontSize: '0.8rem'
+    listStyle: 'none',
+    padding: 0,
+    margin: '0 0 15px 0',
+    fontFamily: 'monospace',
+    fontSize: '0.75rem',
+    color: '#ffffff',
+    opacity: 0.9
+  },
+  item: {
+    marginBottom: '6px',
+    borderLeft: '2px solid #22c55e',
+    paddingLeft: '10px'
   },
   signature: {
-    marginTop: '0.7rem',
     fontSize: '0.7rem',
-    color: '#6b7280'
+    color: '#22c55e',
+    fontStyle: 'italic',
+    opacity: 0.6,
+    borderTop: '1px solid rgba(34, 197, 94, 0.2)',
+    paddingTop: '8px'
   }
 };

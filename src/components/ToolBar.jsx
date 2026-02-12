@@ -10,12 +10,12 @@ export default function Toolbar() {
       </Link>
 
       <div style={styles.links}>
-        <NavLink to="/control-room" label="Control Room" path={pathname} />
-        <NavLink to="/dossier-operateur" label="Dossier" path={pathname} />
-        <NavLink to="/missions-deployees" label="Missions" path={pathname} />
-        <NavLink to="/arsenal-technique" label="Arsenal" path={pathname} />
-        <NavLink to="/case-files" label="Case Files" path={pathname} />
-        <NavLink to="/canal-direct" label="Contact" path={pathname} />
+        <NavLink to="/control-room" label="CONTROL ROOM" path={pathname} />
+        <NavLink to="/dossier-operateur" label="DOSSIER" path={pathname} />
+        <NavLink to="/missions-deployees" label="MISSIONS" path={pathname} />
+        <NavLink to="/arsenal-technique" label="ARSENAL" path={pathname} />
+        <NavLink to="/case-files" label="CASE FILES" path={pathname} />
+        <NavLink to="/canal-direct" label="CONTACT" path={pathname} />
       </div>
     </nav>
   );
@@ -45,26 +45,32 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '8px 16px',
+    padding: '12px 20px',
     backgroundColor: '#020617',
-    borderBottom: '1px solid #1f2933'
+    borderBottom: '2px solid #22c55e'
   },
   logo: {
-    fontSize: '11px',
-    letterSpacing: '0.2em',
-    color: '#93c5fd',
+    fontSize: '12px',
+    fontWeight: 'bold',
+    letterSpacing: '0.25em',
+    color: '#22c55e',
     textDecoration: 'none'
   },
   links: {
     display: 'flex',
-    gap: '12px'
+    gap: '20px'
   },
   link: {
-    fontSize: '11px',
-    color: '#9ca3af',
-    textDecoration: 'none'
+    fontSize: '10px',
+    color: '#22c55e',
+    textDecoration: 'none',
+    fontFamily: 'monospace',
+    opacity: 0.6,
+    letterSpacing: '0.1em'
   },
   active: {
-    color: '#22c55e'
+    opacity: 1,
+    color: '#22c55e',
+    fontWeight: 'bold'
   }
 };
