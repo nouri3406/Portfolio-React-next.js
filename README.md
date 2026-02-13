@@ -1,19 +1,9 @@
+# IIoT Incident Room – Portfolio React
 
-# IIoT INCIDENT ROOM – Portfolio React
+Portfolio orienté **IIoT, supervision, fiabilité et maturité système**.  
+Ce projet met en avant une approche structurée inspirée des environnements industriels : vision globale, contrôle opérationnel et rigueur technique.
 
-## Installation
-```bash
-npm install
-npm run dev
-```
-
-## Déploiement
-```bash
-npm run build
-```
-déployé sur :
-https://nouri3406.github.io/Portfolio-React/
-
+---
 ## Routes
 /control-room  
 /dossier-operateur  
@@ -22,4 +12,10 @@ https://nouri3406.github.io/Portfolio-React/
 /case-files  
 /canal-direct  
 
-Portfolio orienté IIoT, supervision, fiabilité et maturité système.
+## Déploiement
+```bash
+npm run build
+```
+déployé sur :
+https://nouri3406.github.io/Portfolio-React/
+
